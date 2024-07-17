@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After</title>
+
+    <!-- If two elements have the same z-index and the same containing block, the one that appears later in the HTML source order will be rendered on top. When no z-index is specified, or if it's set to auto, the browser will use the default stacking order based on the document flow. -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 30vh;
+        width: 80vw;
+        background: url(./attitude.jpg);
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        position: absolute;
+      }
+
+      .container::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+      }
+
+      p {
+        font-size: 2rem;
+        color: white;
+        position: absolute; /* Added absolute positioning for better control */
+        top: 50%; /* Centered vertically */
+        left: 50%; /* Centered horizontally */
+        transform: translate(
+          -50%,
+          -50%
+        ); /* Centered both vertically and horizontally */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, aperiam
+        fugit, iste nisi distinctio molestiae qui ut, nostrum quas eligendi
+        odit.
+      </p>
+    </div>
+  </body>
+</html>

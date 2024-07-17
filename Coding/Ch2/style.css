@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    background: pink;
+    color: white;
+    height: 40px;
+}
+.pink{
+    background: rgb(8, 214, 118);
+    color: rgb(14, 55, 236);
+}

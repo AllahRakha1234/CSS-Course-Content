@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch7 Paractise#2_2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto auto auto;
+            margin: 15px;
+            padding: 0px 0px 0px 1072px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 0px 0px 0px 12px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            width: 100vw;
+            position: fixed;
+        }
+
+        .container {
+            display: grid;
+            background-image: url("car.jpg");
+            background-attachment: fixed;
+            /* background-position:center; */
+            background-size: 100px;
+            height: 155vh;
+            grid-gap: 5px;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .sticker {
+            /* background-color: blueviolet; */
+            background-image: url("clock.png");
+            width: 50px;
+            height: 50px;
+            position: relative;
+            top: -954px;
+            left: 38px;
+            /* position: sticky; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="item"><img src="arz.jpg" alt="Human"></div>
+        <div class="item"><img src="arzz.jpeg" alt="Human"></div>
+        <div class="item"><img src="arz.jpg" alt="Human"></div>
+    </div>
+    <div class="sticker"></div>
+</body>
+
+</html>

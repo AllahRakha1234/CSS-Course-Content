@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 23px;
+            /* padding: 0px 20px; */
+            padding: 5px 20px;
+            /* position setting */
+            position: sticky;
+            top: 0px;
+            z-index: 10px;
+
+        }
+
+        .firstLi {
+            display: inline;
+        }
+
+        p{
+            text-align: center;
+            border: 3px solid rgb(255, 239, 13);
+        }
+
+        .container {
+            background-color: rgb(14, 235, 216);
+            color: red;
+            height: 70vh;
+            width: 50vw;
+            margin: auto;
+            /* padding: 5px; */
+            /* position: sticky; */
+            /* z-index: 2px; */
+        }
+
+        .box1 {
+            background-color: red;
+            color: black;
+            height: 118px;
+            width: 187px;
+            /* setting position of any box in dispaly */
+            /* position: relative; */
+            /* top: 1px; */
+            /* left: 235px; */
+            /* bottom: 123px; */
+            /* position: absolute; */
+            left: 0px;
+            /* top: 0px; */
+            /* bottom: 0px; */
+            /* right: 0px; */
+            position: fixed;
+
+
+        }
+
+        .box2 {
+            background-color: rgb(60, 255, 0);
+            color: black;
+            height: 2128px;
+            width: 187px;
+        }
+        ul{
+            padding: 30px;
+            /* list-style: circle; */
+            /* list-style: square; */
+            /* list-style: disc; */
+            list-style: square inside url("apple.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="firstLi">Home</li>
+                <li class="firstLi">About</li>
+                <li class="firstLi">Contact</li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae excepturi dolore ab perspiciatis
+            quisquam assumenda autem reprehenderit odio! Beatae, a. Fugit dicta minus dignissimos accusantium maxime,
+            esse, sequi quia minima numquam quaerat amet adipisci!</p>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis obcaecati provident esse ullam
+            consequuntur!</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum molestiae nulla
+            suscipit asperiores corruptilorem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, consectetur corporis.</div>
+    </div>
+    <ul>
+        <li>Ali</li>
+        <li>Aslam</li>
+        <li>Akram</li>
+    </ul>
+
+</body>
+
+</html>

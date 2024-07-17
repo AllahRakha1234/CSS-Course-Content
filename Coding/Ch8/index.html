@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ch 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: red;
+            font-size: 15px;
+            height: 190vh;
+
+        }
+
+        .box {
+            /* border: 3px solid rgb(43, 10, 230); */
+            /* ******************** transform property ************ */
+            /* display: flex; */
+            /* transform-origin: 0px; */
+            /* justify-content: center; */
+            /* align-content: center; */
+            /* transform-origin: center;             */
+            /* transform: translate(134px,56px) rotate(0.5turn); */
+            /* transform: translate(134px,56px) rotate(45deg); */
+            /* transform: scaleX(5); */
+            /* transform: scaleY(5); */
+            /* transform: scale(2,2); */
+            /* transform: skew(16deg, 17deg); */
+            /* transform: skew(26deg); */
+            /* transform: skew(0deg, 26deg); */
+            /* transform: matrix(scaleX(3),skewY(34deg),skewX(34deg),scaleY(3),translateX(6px),translateY(6px)); */
+            /* *********************** 3D method ********************** */
+            /* transform: rotateX(90deg); */
+            /* transform: rotateY(37deg); */
+            /* transform: rotateZ(11deg); */
+        }
+
+        .box1 {
+            background-color: blue;
+            border: 2px solid white;
+            height: 60px;
+            width: 60px;
+            /* position: relative; */
+            /* left: 40px; */
+            /* transform: rotateX(70deg); */
+            /* transform: rotateY(37deg);
+            transform: rotateZ(11deg); */
+            /* ************************** Transition Property ******************************* */
+        }
+
+        img {
+            width: 211px;
+            height: 311px;
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(1,-1.28,.36,1);
+            transition-delay: 0.1s; */
+            /*                               ShortHand Property                                         */
+            transition: width 1s ease-out 0.1s, height 4s ease-in 1s;
+        }
+
+        img:hover {
+            width: 555px;
+            height: 244px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"><img id="ImgId" src="arz.jpg"></div>
+        <button id="btn">Toggle</button>
+        <!-- <div class="box1"></div> -->
+    </div>
+</body>
+<!--  ************************************** Javascript Touch ************************  -->
+<script>
+    ImgId.style.width = "211px";
+    ImgId.style.height = "311px";
+    btn.addEventListener("click", () => {
+        if (ImgId.style.width == "555px") {
+            ImgId.style.width = "211px";
+            ImgId.style.height = "311px";
+
+        }
+        else if (ImgId.style.width == "211px") {
+            ImgId.style.width = "555px";
+            ImgId.style.height = "590px";
+        }
+    })
+</script>
+
+</html>

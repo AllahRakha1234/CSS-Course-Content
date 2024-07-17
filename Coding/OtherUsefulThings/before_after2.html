@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After 2</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 50vh;
+      width: 100vw;
+      background: url("./attitude.jpg");
+      background-position: center;
+      background-size: cover;
+      position: fixed;
+      z-index: 10;
+    }
+
+    .container::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0.4;
+      z-index: -1; /* EITHER USE -VE VALUE OF Z-INDEX HERE OR USE RELATIVE POSITION IN THE CHILD ELEMENT*/
+    }
+
+    .container p {
+      font-size: 2rem;
+      padding: 20px;
+      color: rgb(255, 255, 255);
+      /* position: relative; */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="minContainer">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, aperiam
+          fugit, iste nisi distinctio molestiae qui ut, nostrum quas eligendi
+          odit.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

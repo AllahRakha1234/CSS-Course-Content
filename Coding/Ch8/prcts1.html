@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paractise 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            padding: 12px;
+        }
+
+        ul li {
+            display: inline;
+        }
+        .container {
+            background-color: aqua;
+            width: 100vw;
+            height: 100vh;
+        }
+        .prog {
+            background-color: red;
+            animation: progress 0.5s ease-in;
+        }
+        @keyframes progress {
+            from {
+                width: 5px;
+                height: 5px;
+            }
+            to {
+                width: 100vw;
+                height: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="prog"></div>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    </div>
+</body>
+
+</html>

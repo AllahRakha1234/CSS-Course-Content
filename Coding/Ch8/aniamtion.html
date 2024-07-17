@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 130vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            /* align-content: center; */
+        }
+
+        .box {
+            background-color: red;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*                              Animation Setting                                                 */
+            /* animation-name: widthAnimation;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-direction: alternate-reverse; */
+            animation: widthAnimation 3s ease-in-out 1s 5 alternate-reverse;
+        }
+
+        .image {
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            animation: self 3s ease-in-out 1s 5 alternate-reverse;
+        }
+
+        img {
+            animation: widthAnimation 3s ease-in-out 1s 5 alternate-reverse;
+        }
+
+        .box1 {
+            animation: widthAnimation 3s ease-in-out 1s 5 alternate-reverse;
+            background-color: red;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+
+        @keyframes widthAnimation {
+            from {
+                width: 150px;
+                height: 150px;
+            }
+
+            to {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @keyframes self {
+            0% {
+                width: 150px;
+                height: 150px;
+            }
+
+            50% {
+                width: 300px;
+                height: 300px;
+            }
+
+            100% {
+                width: 600px;
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">ARZ</div>
+        <div class="img"><img src="arz.jpg" alt="Human" width="150px" height="150px"></div>
+        <div class="box1">ARZ</div>
+        <div class="image"><img src="arzz.jpeg" alt="Human" width="150px" height="150px"></div>
+    </div>
+</body>
+
+</html>

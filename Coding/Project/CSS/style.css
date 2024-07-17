@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root {
+    --main-bg-color: rgb(10, 155, 226);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 82px;
+    padding: 0px 23px;
+}
+
+nav ul {
+    height: 52px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(84, 115, 151);
+    font-weight: bold;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+
+}
+
+.search input {
+    width: 32.1vw;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px 14px 0px 35px;
+    padding: 0px 13px;
+}
+
+.search button {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.container {
+    min-height: calc(100vh - 52px - 54px);
+
+}
+
+.slider {
+    margin: auto;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 1094px;
+    height: 470px;
+    margin: 15px auto;
+}
+.cards {
+    background-color: rgb(226, 211, 211);
+    width: 90vw;
+    margin:23px auto;
+    
+}
+
+.card-item-holder {
+    display: flex;
+    overflow: hidden;
+    margin: 8px 0px;
+}
+
+.cards h2 {
+    padding: 0px 7px;
+}
+
+.card-item {             
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 4px;
+}
+
+.lines {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 8.23vh;
+    font-family: 'Dancing Script', cursive;
+}

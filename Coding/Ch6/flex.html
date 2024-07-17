@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Property</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap ;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: initial; */
+            /* flex-wrap: inherit; */
+            background-color: aqua;
+            height: 100vh;
+            /* For horizontal alignment */
+            justify-content: center; 
+            /* justify-content: flex-start; */
+            /* For vertical alignment        */
+            align-items: center;         
+            /* align-items: flex-end; */
+
+            /* ***It is use to remove spaces between boxes when they meet each other by minimizing screem window*** */
+            /* align-content: center; */
+        }
+        .b1 {
+            background-color: red;
+            color: black;
+            height: 140px;
+            width: 240px;
+            /* ****************************** flex item properties *************** */
+            /* order: 3; */
+            order: 5;
+            /* align-self: flex-start; */
+            flex-grow: 2;
+            /* flex-shrink: 2; */
+        }
+
+        .b2 {
+            background-color: rgb(50, 11, 224);
+            color: black;
+            height: 140px;
+            width: 240px;
+
+            flex-grow: 2;
+        }
+
+        .b3 {
+            background-color: rgb(32, 240, 13);
+            color: black;
+            height: 140px;
+            width: 240px;
+        }
+
+        .b4 {
+            background-color: rgb(248, 10, 236);
+            color: black;
+            height: 140px;
+            width: 240px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="b1">box 1</div>
+        <div class="b2">box 2</div>
+        <div class="b3">box 3</div>
+        <div class="b4">box 4</div>
+
+    </div>
+
+</body>
+
+</html>
